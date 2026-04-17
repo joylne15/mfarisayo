@@ -1,0 +1,138 @@
+/* --- CSS VARIABLES --- */
+:root {
+    --primary-color: #0f172a;   /* Dark Blue */
+    --secondary-color: #3b82f6; /* Bright Blue */
+    --text-color: #334155;      /* Dark Slate */
+    --bg-color: #f8fafc;        /* Light Gray/Blue */
+    --white: #ffffff;
+}
+
+/* --- RESET & BASE STYLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- HEADER --- */
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* --- MAIN CONTENT LAYOUT --- */
+main {
+    padding: 40px 0;
+}
+
+section {
+    background: var(--white);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* --- SERVICES LIST --- */
+.service-list {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.service-list li {
+    background: var(--bg-color);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 0 4px 4px 0;
+}
+
+/* --- TASK DETAILS BOX --- */
+.task-details {
+    background-color: #eff6ff; /* Very light blue */
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 1px solid #bfdbfe;
+}
+
+.task-details h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.task-details ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.task-details ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.task-details li {
+    margin-bottom: 8px;
+}
+
+/* --- DEADLINE & FOOTER --- */
+.deadline-box {
+    background: #fef2f2; /* Light red */
+    color: #dc2626;      
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid #fecaca;
+}
+
+.deadline-box p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
